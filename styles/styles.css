@@ -1,0 +1,221 @@
+:root {
+
+	--veryDarkMagenta:     hsl(300, 43%, 22%);
+	--softPink:            hsl(333, 80%, 67%);
+	--darkGrayishMagenta:  hsl(303, 10%, 53%);
+	--lightGrayishMagenta: hsl(300, 24%, 96%);
+	--white:               hsl(0, 0%, 100%);
+
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+}
+
+#view {
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px 160px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--white);
+}
+
+main {
+	width: 90%;
+	max-width: 1160px;
+}
+
+main .top {
+	display: flex;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+main .top .text {
+	width: 40%;
+}
+
+main .top .rates {
+	width: 60%;
+}
+
+main .top .text h1 {
+	color: var(--veryDarkMagenta);
+	font-family: 'league-spartan-bold';
+	font-size: 50px;
+	line-height: 48px;
+	margin-bottom: 25px;
+}
+
+main .top .text p.description {
+	color: var(--darkGrayishMagenta);
+}
+
+main .top .rates .rate-bar {
+	width: 400px;
+	background-color: var(--lightGrayishMagenta);
+	padding: 15px 0;
+	margin-bottom: 18px;
+	float: right;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+main .top .rates .reviews {margin-right: 100px;}
+main .top .rates .guru {margin-right: 50px;}
+
+main .top .rates .rate-bar .stars-container {
+	display: flex;
+	gap: 5px;
+}
+
+main .top .rates .rate-bar p {
+	font-family: 'league-spartan-bold';
+	color: var(--veryDarkMagenta);
+}
+
+main .bottom .boxes-container {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	min-height: 270px;
+}
+
+main .bottom .boxes-container .box {
+	background-color: var(--veryDarkMagenta);
+	width: 100%;
+	max-width: 380px;
+	max-height: 250px;
+	border-radius: 10px;
+	padding: 40px 35px 50px 35px;
+}
+
+main .bottom .boxes-container .box.colton {
+	align-self: flex-start;
+
+}
+
+main .bottom .boxes-container .box.irene {
+	align-self: center;
+
+}
+
+main .bottom .boxes-container .box.anne {
+	align-self: flex-end;
+}
+
+main .bottom .boxes-container .box .user {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+main .bottom .boxes-container .box .user img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+main .bottom .boxes-container .box .user .user-text .name {
+	color: var(--white);
+	font-family: 'league-spartan-bold';
+}
+
+main .bottom .boxes-container .box .user .user-text .ocupation {
+	color: var(--softPink);
+}
+
+
+main .bottom .boxes-container .box .bio {
+	color: var(--white);
+	font-family: 'league-spartan-medium';
+}
+
+
+
+
+
+@media (min-width: 1440px) {
+	main {
+		max-width: 1300px;
+	}
+}
+
+@media (max-width: 1300px) {
+
+	main .top {
+		display: block;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	
+	main .top .text {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	main .top .rates {
+		width: 100%;
+	}
+
+	main .bottom .boxes-container {
+		display: flex;
+		flex-direction: column;
+		gap: initial;
+		justify-content: center;
+		align-items: center;
+		min-height: initial;
+	}
+	
+	main .bottom .boxes-container .box.colton,
+	main .bottom .boxes-container .box.irene,
+	main .bottom .boxes-container .box.anne {
+		align-self: initial;
+		margin-bottom: 20px;
+	}
+
+	main .top .rates .rate-bar {
+		float: none;
+		margin: 0 auto 18px auto;
+	}
+
+
+
+}
+
+@media (max-width: 800px) {
+	#view {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	main .top .rates .rate-bar {
+		flex-direction: column;
+		gap: 12px;
+		/*width: 100%;*/
+	}
+}
+
+@media (max-width: 460px) {
+	
+	main .top .rates .rate-bar {
+		width: 100%;
+	}
+
+	main .top .text h1 {
+		font-size: 40px;
+		line-height: 38px;
+	}
+	
+	main .top .text p.description {
+		font-size: 17px;
+	}	
+}

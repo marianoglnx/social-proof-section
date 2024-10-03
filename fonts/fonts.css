@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'league-spartan';
+    src: url(../fonts/LeagueSpartan-Regular.ttf);             /*400*/
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'league-spartan-medium';
+    src: url(../fonts/LeagueSpartan-Medium.ttf);             /*500*/
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'league-spartan-bold';
+    src: url(../fonts/LeagueSpartan-Bold.ttf);             /*700*/
+    font-display: swap;
+}
